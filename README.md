@@ -33,6 +33,18 @@ To get a local copy of this template up and running on your machine, follow thes
 - Build the docker containers`docker-compose -f docker-compose.dev.yml build` for the dev containers and `docker-compose -f docker-compose.prod.yml build` for the prod containers
 - Run the docker containers`docker-compose -f docker-compose.dev.yml up` for the dev containers and `docker-compose -f docker-compose.prod.yml up` for the prod containers
 
+## Connecting with github
+in your github account go to settings >> developers and hit "New OAuth App" button and  fill the necessary fields as shown in the image below.
+
+<img src="img.png"/>
+
+After clicking on “Register application,” you will be taken to your app, where you should carefully note both your client secret and client ID.
+
+After registering your application, you will have access to the application name, client ID and application secret key, keep these data safe.
+Then, log in to your django application in the admin panel, press social application >> add social application, and fill in the fields pasting the data taken from guithub. In the provider field select GitHub and then press save.
+
+With everything ready, access the address to your django application and have fun.
+
 ## API Documentation
 API documentation is done using swagger. Visit `/swagger` for API documentation.
 
